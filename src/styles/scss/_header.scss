@@ -1,0 +1,60 @@
+body {
+  padding-top: 70px;
+ // background-image: url(../../img/screen-5.jpg);
+  .navbar {
+    background-color: #452a83;
+    z-index: 2;
+    .navbar-brand {
+      font-size: 1em;
+      color: rgb(36, 33, 33);
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  /* Style the header */
+  .header {
+    /* padding: 10px 16px;*/
+    background: #555;
+    color: #f1f1f1;
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url(../../img/hamburger.png);
+}
+.img-hover-scale {
+  transition: 1.1s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.container-my {
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  margin: 7px 7px 7px 0;
+}
